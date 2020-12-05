@@ -25,6 +25,6 @@ public class GoogleTests{
         Configuration.browser = "chrome";
         open("http://google.com");
         $(byName("q")).setValue("Selenide").pressEnter();
-        $("html").shouldHave(text("Selenide: concise UI tests in Java"));
+        $("html").shouldHave(text("Selenide"));
     }
 }
